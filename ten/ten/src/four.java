@@ -13,6 +13,13 @@ public class four {
         String day = input.substring(f + 1, l);
         String year = input.substring(l + 1);
 
+        if (month.length() == 1) {
+            month = "0" + month;
+        }
+        if (day.length() == 1) {
+            day = "0" + day;
+        }
+
         return day + '-' + month + '-' + year;
     }
     

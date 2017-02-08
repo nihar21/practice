@@ -8,10 +8,12 @@ public class Four {
     public static double totalWages(double hours, double rate) {
         double wages;
         
-        wages = hours * rate;
-        
+
         if (hours > 40) {
-            wages += (hours - 40) * 1.5 * rate;
+            wages = (hours - 40) * 1.5 * rate + 40 * rate;
+        } else {
+            wages = hours * rate;
+
         }
         
         return wages;

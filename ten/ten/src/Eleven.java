@@ -7,6 +7,9 @@ public class Eleven {
 
     public static String cutOut(String mString, String sub) {
         final int index = mString.indexOf(sub);
+        if (index == -1) {
+            return "Error: Nothing found";
+        }
         return mString.substring(0, index) + mString.substring(index + sub.length());
     }
 

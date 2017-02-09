@@ -46,6 +46,9 @@ public class ACSL {
                     // rTest = Integer.toString(Integer.parseInt(rTest));
                     while (rTest.charAt(0) == '0') {
                         rTest = rTest.substring(1);
+                        if (rTest.length() == 0) {
+                            return;
+                        }
                     }
 
                     shave(tInt, rTest);

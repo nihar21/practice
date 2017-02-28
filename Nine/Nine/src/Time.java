@@ -41,7 +41,13 @@ public class Time {
     }
 
     public int elapsedSince(Time t) {
-        return (t.toMins() - this.toMins()) % (24 * 60);
+        int ans = t.toMins() - this.toMins();
+        if (ans < 0) {
+            return (t.toMins() - this.toMins()) + (24 * 60);
+        } else {
+            return (t.toMins() - this.toMins());
+
+        }
     }
 
     public String toString() {

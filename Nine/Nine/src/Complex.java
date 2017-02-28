@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
     Problem 17
  */
@@ -57,6 +59,10 @@ public class Complex {
         System.out.println(f.multiply(s));
         System.out.println(f.add(2, 1));
         System.out.println(f.multiply(2, 1));
+
+        Scanner a = new Scanner(System.in);
+        a.hasNext();
+
 
     }
 }
